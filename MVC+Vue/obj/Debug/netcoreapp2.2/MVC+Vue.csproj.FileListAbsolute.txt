@@ -1,0 +1,60 @@
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.deps.json
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.runtimeconfig.json
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.runtimeconfig.dev.json
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.dll
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.pdb
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.Views.dll
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.Views.pdb
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.csprojAssemblyReference.cache
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.csproj.CoreCompileInputs.cache
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.RazorAssemblyInfo.cache
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.RazorAssemblyInfo.cs
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.AssemblyInfoInputs.cache
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.AssemblyInfo.cs
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.TagHelpers.input.cache
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.TagHelpers.output.cache
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.RazorCoreGenerate.cache
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.RazorTargetAssemblyInfo.cache
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.RazorTargetAssemblyInfo.cs
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.Views.pdb
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.dll
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.pdb
+C:\Users\v-anzha\Desktop\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.csproj.CopyComplete
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.deps.json
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.runtimeconfig.json
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.runtimeconfig.dev.json
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.dll
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.pdb
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.Views.dll
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\bin\Debug\netcoreapp2.2\MVC+Vue.Views.pdb
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.csprojAssemblyReference.cache
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.csproj.CoreCompileInputs.cache
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.RazorAssemblyInfo.cache
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.RazorAssemblyInfo.cs
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.AssemblyInfoInputs.cache
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.AssemblyInfo.cs
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.TagHelpers.input.cache
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.TagHelpers.output.cache
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.RazorCoreGenerate.cache
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.RazorTargetAssemblyInfo.cache
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.RazorTargetAssemblyInfo.cs
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.Views.pdb
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.dll
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.pdb
+C:\Users\v-anzha\Documents\Tencent Files\3143422472\FileRecv\MVC+Vue\MVC+Vue\obj\Debug\netcoreapp2.2\MVC+Vue.csproj.CopyComplete
