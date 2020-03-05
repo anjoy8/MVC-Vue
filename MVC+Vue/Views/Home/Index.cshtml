@@ -6,17 +6,24 @@
 
 <section class="todoapp">
     <header class="header">
-        <h1>todos</h1>
+        <h1>Knowledges</h1>
         <input class="new-todo"
                autofocus autocomplete="off"
-               placeholder="What needs to be done?"
+               placeholder="你想知道什么问题?简要描述，回车提交"
                v-model="newTodo"
                @@keyup.enter="addTodo">
-        <script src="http://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
+        <textarea class="toggle-more" id="toggle-more"
+                  placeholder="and more..."
+                  v-model="newTodoMore"></textarea>
+        <script src="~/js/vue.min.js"></script>
+        <script src="~/js/axios.min.js"></script>
         <link href="~/css/index.css" rel="stylesheet" />
     </header>
+    <div class="toggle-sec"></div>
     <section class="main" v-show="todos.length" v-cloak>
         <input id="toggle-all" class="toggle-all" type="checkbox" v-model="allDone">
+
+
         <label for="toggle-all"></label>
         <ul class="todo-list">
             <li v-for="todo in filteredTodos"
@@ -24,9 +31,9 @@
                 :key="todo.id"
                 :class="{ completed: todo.completed, editing: todo == editedTodo }">
                 <div class="view">
-                    <input class="toggle" type="checkbox" v-model="todo.completed">
-                    <label @@dblclick="editTodo(todo)">{{ todo.title }}</label>
-                    <button class="destroy" @@click="removeTodo(todo)"></button>
+                    @*<input class="toggle" type="checkbox" v-model="todo.completed">*@
+                    <label>{{( "00" + todo.id ).substr( -3 )}} . {{ todo.title }} <span class="todo-more" v-if="todo.more">( {{ todo.more }} )</span></label>
+                    @*<button class="destroy" @@click="removeTodo(todo)"></button>*@
                 </div>
                 <input class="edit" type="text"
                        v-model="todo.title"
@@ -51,19 +58,17 @@
     </footer>
 </section>
 <footer class="info">
-    <p>Double-click to edit a todo</p>
-   
+    <p> Copyright © 2018-2020-老张的哲学 </p>
+
 </footer>
 <script>
 
-    // Full spec-compliant TodoMVC with localStorage persistence
-    // and hash-based routing in ~120 effective lines of JavaScript.
-
-    // localStorage persistence
     var STORAGE_KEY = 'todos-vuejs-2.0'
     var todoStorage = {
         fetch: function () {
             var todos = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')
+
+
             todos.forEach(function (todo, index) {
                 todo.id = index
             })
@@ -71,7 +76,7 @@
             return todos
         },
         save: function (todos) {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(todos))
+            //localStorage.setItem(STORAGE_KEY, JSON.stringify(todos))
         }
     }
 
@@ -96,17 +101,28 @@
     var app = new Vue({
         // app initial state
         data: {
-            todos: todoStorage.fetch(),
+            todos: [],
             newTodo: '',
+            newTodoMore: '',
             editedTodo: null,
             visibility: 'all'
+        },
+        created: function () {
+            let _this = this;
+            axios.get('/list')
+                .then(function (response) {
+                    _this.todos = (response.data);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
         },
 
         // watch todos change for localStorage persistence
         watch: {
             todos: {
                 handler: function (todos) {
-                    todoStorage.save(todos)
+                    //todoStorage.save(todos)
                 },
                 deep: true
             }
@@ -144,15 +160,30 @@
         methods: {
             addTodo: function () {
                 var value = this.newTodo && this.newTodo.trim()
+                var more = this.newTodoMore && this.newTodoMore.trim()
                 if (!value) {
                     return
                 }
-                this.todos.push({
-                    id: todoStorage.uid++,
-                    title: value,
-                    completed: false
+
+
+                // 添加
+                let _this = this;
+                axios.post('/add', {
+                    Title: value,
+                    More: more
                 })
-                this.newTodo = ''
+                    .then(function (response) {
+                        console.log(response);
+                        if (response.data.success) {
+                            alert("提交成功，等待直播中解答");
+
+                            history.go(0);
+                        }
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+
             },
 
             removeTodo: function (todo) {
