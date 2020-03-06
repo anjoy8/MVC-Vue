@@ -84,6 +84,9 @@ body {
 .toggle-plan1 {
     background: aqua;
 }
+.toggle-plan12 {
+    background: bisque;
+}
 
 
 .toggle-plan2 {
@@ -223,7 +226,7 @@ body {
 
     .todo-list li {
         position: relative;
-        font-size: 24px;
+        font-size: 19px;
         border-bottom: 1px solid #ededed;
     }
 
