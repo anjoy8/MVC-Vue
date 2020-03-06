@@ -40,7 +40,7 @@
                 :class="{ completed: todo.completed, editing: todo == editedTodo }">
                 <div class="view">
                     @*<input class="toggle" type="checkbox" v-model="todo.completed">*@
-                    <div class="toggle-plan {{'toggle-plan'+todo.plan}}"></div>
+                    <div class="toggle-plan {{'toggle-plan'+todo.plan}}">{{todo.plan=='99' ? '张':''}}</div>
                     <label v-if="todo.id">{{( "00" + todo.id ).substr( -3 )}} . {{ todo.title }} <span class="todo-more" v-if="todo.more">( {{ todo.more }} )</span></label>
                     @*<button class="destroy" @@click="removeTodo(todo)"></button>*@
                 </div>
