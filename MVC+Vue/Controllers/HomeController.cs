@@ -58,6 +58,7 @@ namespace MVC_Vue.Controllers
             var data = new MessageModel<string>();
 
             question.CreateDate = DateTime.Now;
+            question.Plan = "0";
 
             var id = db.Insertable(question).ExecuteCommand();
             data.success = id > 0;

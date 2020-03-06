@@ -58,6 +58,56 @@ body {
     margin: 0;
     height: 40px;
 }
+.toggle-sec .item{
+  float:left;
+  margin-top:10px;
+}
+.toggle-plan {
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border: none;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    margin-left: 5px;
+}
+
+
+.toggle-plan0 {
+    background: aliceblue;
+}
+
+.toggle-plan1 {
+    background: aqua;
+}
+
+
+.toggle-plan2 {
+    background: gray;
+}
+
+
+.toggle-plan3 {
+    background: green;
+}
+.toggle-planx {
+    width: 15px;
+    float: left;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-right: 3px;
+    margin-top: 2px;
+}
+
+
+
+
+
 
 .todo-more {
     font-size: 12px;
@@ -231,7 +281,7 @@ body {
 
         .todo-list li label {
             word-break: break-all;
-            padding: 15px 15px 15px 20px;
+            padding: 15px 15px 15px 25px;
             display: block;
             line-height: 1.2;
             transition: color 0.4s;

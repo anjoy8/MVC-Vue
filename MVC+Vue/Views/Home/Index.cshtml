@@ -19,7 +19,13 @@
         <script src="~/js/axios.min.js"></script>
         <link href="~/css/index.css" rel="stylesheet" />
     </header>
-    <div class="toggle-sec"></div>
+    <div class="toggle-sec">
+
+        <div class="item"><div class="toggle-planx toggle-plan0"></div>新建</div>
+        <div class="item"><div class="toggle-planx toggle-plan1"></div>要讲</div> 
+        <div class="item"><div class="toggle-planx toggle-plan2"></div>搁置</div> 
+        <div class="item"> <div class="toggle-planx toggle-plan3"></div>完成</div> 
+    </div>
     <section class="main" v-show="todos.length" v-cloak>
         <input id="toggle-all" class="toggle-all" type="checkbox" v-model="allDone">
 
@@ -32,6 +38,7 @@
                 :class="{ completed: todo.completed, editing: todo == editedTodo }">
                 <div class="view">
                     @*<input class="toggle" type="checkbox" v-model="todo.completed">*@
+                    <div class="toggle-plan {{'toggle-plan'+todo.plan}}"></div>
                     <label v-if="todo.id">{{( "00" + todo.id ).substr( -3 )}} . {{ todo.title }} <span class="todo-more" v-if="todo.more">( {{ todo.more }} )</span></label>
                     @*<button class="destroy" @@click="removeTodo(todo)"></button>*@
                 </div>
