@@ -93,6 +93,12 @@ body {
     background: gray;
 }
 
+.toggle-plan99 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
 
 .toggle-plan3 {
     background: green;
