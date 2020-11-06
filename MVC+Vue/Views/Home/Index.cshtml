@@ -4,30 +4,66 @@
 }
 
 
-<section class="todoapp">
-    <header class="header">
-        <h1>Knowledge</h1>
-        <input class="new-todo"
-               autofocus autocomplete="off"
-               placeholder="你想知道什么问题?简要描述，回车提交"
-               v-model="newTodo"
-               @@keyup.enter="addTodo">
-        <textarea class="toggle-more" id="toggle-more"
-                  placeholder="and more..."
-                  v-model="newTodoMore"></textarea>
-        <script src="~/js/vue.min.js"></script>
-        <script src="~/js/axios.min.js"></script>
-        <link href="~/css/index.css" rel="stylesheet" />
-    </header>
-    <div class="toggle-sec">
+<script src="~/js/vue.min.js"></script>
+<script src="~/js/axios.min.js"></script>
+<link href="~/css/index.css" rel="stylesheet" />
+<script src="~/js/jquery-3.3.1.min.js"></script>
 
-        <div class="item"><div class="toggle-planx toggle-plan0"></div>新建</div>
-        <div class="item"><div class="toggle-planx toggle-plan1"></div>要讲</div> 
-        <div class="item"><div class="toggle-planx toggle-plan12"></div>待定</div> 
-        <div class="item"><div class="toggle-planx toggle-plan2"></div>搁置</div> 
-        <div class="item"> <div class="toggle-planx toggle-plan3"></div>完成</div> 
-        <div class="item"> <div class="toggle-planx toggle-plan99"></div>老张</div> 
-    </div>
+
+<section class="todoapp">
+    @*<header class="header">
+            <h1>Knowledge</h1>
+            <input class="new-todo"
+                   autofocus autocomplete="off"
+                   placeholder="你想知道什么问题?简要描述，回车提交"
+                   v-model="newTodo"
+                   @@keyup.enter="addTodo">
+            <textarea class="toggle-more" id="toggle-more"
+                      placeholder="and more..."
+                      v-model="newTodoMore"></textarea>
+        </header>
+        <div class="toggle-sec">
+
+            <div class="item"><div class="toggle-planx toggle-plan0"></div>新建</div>
+            <div class="item"><div class="toggle-planx toggle-plan1"></div>要讲</div>
+            <div class="item"><div class="toggle-planx toggle-plan12"></div>待定</div>
+            <div class="item"><div class="toggle-planx toggle-plan2"></div>搁置</div>
+            <div class="item"> <div class="toggle-planx toggle-plan3"></div>完成</div>
+            <div class="item"> <div class="toggle-planx toggle-plan99"></div>老张</div>
+        </div>*@
+
+    <header class="header">
+        <div onclick="start()" style="margin: 0px auto;width: 130px;text-align: center;padding-top: 10px;background: #00a1d6;color: #fff;padding-bottom: 10px;cursor: pointer;">召唤居居贼，签到</div>
+        <table style="margin: 0 auto;">
+            <tr>
+                <td><img id="s1" src="" /></td>
+                <td><img id="s2" src="" /></td>
+                <td><img id="s3" src="" /></td>
+                <td><img id="s4" src="" /></td>
+            </tr>
+            <tr>
+                <td><img id="s5" src="" /></td>
+                <td><img id="s6" src="" /></td>
+                <td><img id="s7" src="" /></td>
+                <td><img id="s8" src="" /></td>
+            </tr>
+            <tr>
+                <td><img id="s9" src="" /></td>
+                <td><img id="s10" src="" /></td>
+                <td><img id="s11" src="" /></td>
+                <td><img id="s12" src="" /></td>
+            </tr>
+            <tr>
+                <td><img id="s13" src="" /></td>
+                <td><img id="s14" src="" /></td>
+                <td><img id="s15" src="" /></td>
+                <td><img id="s16" src="" /></td>
+            </tr>
+
+        </table>
+
+    </header>
+
     <section class="main" v-show="todos.length" v-cloak>
         <input id="toggle-all" class="toggle-all" type="checkbox" v-model="allDone">
 
@@ -41,7 +77,7 @@
                 <div class="view">
                     @*<input class="toggle" type="checkbox" v-model="todo.completed">*@
                     <div class="toggle-plan {{'toggle-plan'+todo.plan}}">{{todo.plan=='99' ? '张':''}}</div>
-                    <label v-if="todo.id">{{( "00" + todo.id ).substr( -3 )}} . {{ todo.title }} <span class="todo-more" v-if="todo.more">( {{ todo.more }} )</span></label>
+                    <label v-if="todo.id">{{( "00" + todo.id ).substr( -3 )}} . {{ todo.plan }} : {{ todo.ip }} <span class="todo-more">( {{ todo.createDate }} )</span></label>
                     @*<button class="destroy" @@click="removeTodo(todo)"></button>*@
                 </div>
                 <input class="edit" type="text"
@@ -57,10 +93,10 @@
             <strong>{{ remaining }}</strong> {{ remaining | pluralize }} left
         </span>
         @*<ul class="filters">
-            <li><a href="#/all" :class="{ selected: visibility == 'all' }">All</a></li>
-            <li><a href="#/active" :class="{ selected: visibility == 'active' }">Active</a></li>
-            <li><a href="#/completed" :class="{ selected: visibility == 'completed' }">Completed</a></li>
-        </ul>*@
+                <li><a href="#/all" :class="{ selected: visibility == 'all' }">All</a></li>
+                <li><a href="#/active" :class="{ selected: visibility == 'active' }">Active</a></li>
+                <li><a href="#/completed" :class="{ selected: visibility == 'completed' }">Completed</a></li>
+            </ul>*@
         <button class="clear-completed" @@click="removeCompleted" v-show="todos.length > remaining">
             Clear completed
         </button>
@@ -70,6 +106,57 @@
     <p> Copyright © 2018-2020-老张的哲学 </p>
 
 </footer>
+<script>
+    var zjOk33 = parseInt(Math.random() * 16 + 1);
+    if (document.getElementById("s" + zjOk33)) {
+        document.getElementById("s" + zjOk33).src = "/css/33.jpg";
+    }
+
+    var zjOk = parseInt(Math.random() * 16 + 1);
+    if (document.getElementById("s" + zjOk)) {
+        document.getElementById("s" + zjOk).src = "/css/44.jpg";
+    }
+
+    var abc;
+    function start() {
+        abc = setInterval("cj()", 1000);
+    }
+
+    function cj() {
+        for (var i = 1; i <= 16; i++) {
+            document.getElementById("s" + i).style.filter = "opacity(0.5)";
+        }
+        var zj = parseInt(Math.random() * 16 + 1);
+
+        if (document.getElementById("s" + zj)) {
+            document.getElementById("s" + zj).style.filter = "opacity(1)";
+            if (zj == zjOk) {
+                stop();
+                alert("活捉居居，牵走！");
+                $('#s' + zjOk).css({ 'cursor': 'pointer' });
+                $('#s' + zjOk).click(function () {
+                  
+                    $.post("/add", {}, function (result) {
+                        if (result.success) {
+                            alert("签到成功！");
+                            history.go(0);
+                        }
+                        else {
+                            alert(result.msg);
+                        }
+
+                    }).fail(function () {
+                        alert("SERVER ERROR!");
+                    });
+
+                });
+            }
+        }
+    }
+    function stop() {
+        clearInterval(abc);
+    }
+</script>
 <script>
 
     var STORAGE_KEY = 'todos-vuejs-2.0'

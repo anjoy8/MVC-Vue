@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MVC_Vue.Models;
 using SqlSugar;
@@ -12,8 +13,10 @@ namespace MVC_Vue.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IHttpContextAccessor _accessor;
+
         private static SqlSugarClient db { get; set; }
-        public HomeController()
+        public HomeController(IHttpContextAccessor accessor)
         {
 
             db = new SqlSugarClient(
@@ -25,6 +28,7 @@ namespace MVC_Vue.Controllers
                   InitKeyType = InitKeyType.Attribute
               }
           );
+            _accessor = accessor;
 
             //db.DbMaintenance.CreateDatabase();
 
@@ -53,12 +57,19 @@ namespace MVC_Vue.Controllers
 
         [HttpPost]
         [Route("/add")]
-        public MessageModel<string> Post([FromBody] Question question)
+        public MessageModel<string> Post()
         {
             var data = new MessageModel<string>();
+            Question question = new Question();
+            question.CreateDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            question.Plan = DateTime.Now.ToString("yyyy-MM-dd");
+            var ip = _accessor.HttpContext.Request.Headers["X-Forwarded-For"].ObjToString();
+            if (string.IsNullOrEmpty(ip))
+            {
+                ip = _accessor.HttpContext.Connection.RemoteIpAddress.ObjToString();
+            }
 
-            question.CreateDate = DateTime.Now;
-            question.Plan = "0";
+            question.IP = ip;
 
             var id = db.Insertable(question).ExecuteCommand();
             data.success = id > 0;
