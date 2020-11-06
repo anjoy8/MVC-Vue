@@ -29,9 +29,9 @@ namespace MVC_Vue
              }
          );
 
-            db.DbMaintenance.CreateDatabase();
+            //db.DbMaintenance.CreateDatabase();
 
-            db.CodeFirst.InitTables(typeof(Question));
+            //db.CodeFirst.InitTables(typeof(Question));
 
             host.Run();
         }
